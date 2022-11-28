@@ -33,7 +33,7 @@ public class MovePlayer : MonoBehaviour
         }
 
 
-        this.transform.position = new Vector3(
+        /*this.transform.position = new Vector3(
         Mathf.Round(this.transform.position.x) + _direction.x,
         Mathf.Round(this.transform.position.y) + _direction.y,
             0.0f);
@@ -45,6 +45,6 @@ public class MovePlayer : MonoBehaviour
         float y = Mathf.Round(transform.position.y) + _direction.y;
 
         transform.position = new Vector2(x, y);
-        nextUpdate = Time.time + (1f / (playerSpeed * speedMultiplier));
+        nextUpdate = Time.time + (1f / (playerSpeed * speedMultiplier));*/
     }
 }

@@ -162,8 +162,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 9, y: -910.47705}
-  m_SizeDelta: {x: -620.2197, y: -1820.9541}
+  m_AnchoredPosition: {x: -9.759949, y: -958.12524}
+  m_SizeDelta: {x: -602.6998, y: -1916.2505}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &217475266
 MonoBehaviour:
@@ -1079,6 +1079,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   segmentPrefab: {fileID: 8289895059614006178, guid: 49e9af45d4ead8341a01ce73016bfafa, type: 3}
+  initialSize: 4
 --- !u!61 &1695263301
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1140,6 +1141,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   movementJoystick: {fileID: 217475267}
   playerSpeed: 3
+  speedMultiplier: 1
 --- !u!1 &1702521332
 GameObject:
   m_ObjectHideFlags: 0
