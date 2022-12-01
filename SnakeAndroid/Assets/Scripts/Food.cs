@@ -1,13 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Food : MonoBehaviour
 {
     public BoxCollider2D gridArea;
 
+    public TextMeshProUGUI scoreText;
+    private int ScoreNum;
     private void Start()
     {
+        ScoreNum = 0;
+        scoreText.text = "Score: " + ScoreNum;
         RandomizePosition();
     }
     private void RandomizePosition()
@@ -24,8 +30,11 @@ public class Food : MonoBehaviour
     {
         if(other.tag == "Player")
         {
-        RandomizePosition(); 
+            ScoreNum += 10;
+            scoreText.text = "Score: " + ScoreNum;
+            RandomizePosition(); 
         }
     }
+
 }
 
