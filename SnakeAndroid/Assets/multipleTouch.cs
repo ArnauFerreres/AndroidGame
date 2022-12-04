@@ -27,7 +27,7 @@ public class multipleTouch : MonoBehaviour
                 Debug.Log("touch ended");
                 touchLocation thisTouch = touches.Find(touchLocation => touchLocation.touchId == t.fingerId);
                 Destroy(thisTouch.circle);
-
+                touches.RemoveAt(touches.IndexOf(thisTouch));
             }
             else if (t.phase == TouchPhase.Moved)
             {
