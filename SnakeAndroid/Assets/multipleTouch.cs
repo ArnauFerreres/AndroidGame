@@ -38,6 +38,7 @@ public class multipleTouch : MonoBehaviour
             }
             ++i;
         }
+        
     }
     Vector2 getTouchPosition(Vector2 touchPosition)
     {
@@ -51,5 +52,7 @@ public class multipleTouch : MonoBehaviour
         c.transform.position = getTouchPosition(t.position);
         return c;
     }
+
+    
 }
 
