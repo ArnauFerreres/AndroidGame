@@ -13,7 +13,7 @@ public class Food : MonoBehaviour
     private void Start()
     {
         ScoreNum = 0;
-        scoreText.text = "Score: " + ScoreNum;
+        scoreText.text = "Score " + ScoreNum;
         RandomizePosition();
     }
     private void RandomizePosition()
@@ -31,7 +31,7 @@ public class Food : MonoBehaviour
         if(other.tag == "Player")
         {
             ScoreNum += 10;
-            scoreText.text = "Score: " + ScoreNum;
+            scoreText.text = "Score " + ScoreNum;
             RandomizePosition(); 
         }
     }

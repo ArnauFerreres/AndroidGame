@@ -4,32 +4,57 @@ using UnityEngine;
 
 public class Snake : MonoBehaviour
 {
-    Gyroscope steerGyro;
-    public Rigidbody2D snake;
-    public float speed;
+    //Gyroscope steerGyro;
+    //public Rigidbody2D snake;
+    //public float speed;
 
     private List<Transform> _segments = new List<Transform>();
     public Transform segmentPrefab;
     public int initialSize = 4;
 
+
+    private Vector2 _direction = Vector2.right;
     private void Start()
     {
         ResetGame();
 
-        steerGyro = Input.gyro;
-        steerGyro.enabled = true;
+        //steerGyro = Input.gyro;
+        //steerGyro.enabled = true;
     }
+    private void Update()
+    {
+        //if (Input.gyro.)
+        //{
+        //    _direction = Vector2.up;
 
+        //}
+        //else if (Input.GetKeyDown(KeyCode.S))
+        //{
+        //    _direction = Vector2.down;
+
+        //}
+        //else if (Input.GetKeyDown(KeyCode.A))
+        //{
+        //    _direction = Vector2.left;
+
+        //}
+        //else if (Input.GetKeyDown(KeyCode.D))
+        //{
+        //    _direction = Vector2.right;
+
+        //}
+
+    }
     private void FixedUpdate()
     {
         for (int i = _segments.Count - 1; i > 0; i--)
         {
             _segments[i].position = _segments[i - 1].position;
-            transform.rotation = steerGyro.attitude;
-            float XX = steerGyro.attitude.x;
-            float YY = steerGyro.attitude.y;    
+            //transform.position = steerGyro.rotationRate;
+            //float XX = steerGyro.attitude.x;
+            //float YY = steerGyro.attitude.y;    
 
-            snake.velocity = new Vector3(XX * speed, 0f, YY * speed);
+            //snake.velocity = new Vector3(XX * speed, 0f, YY * speed);
         }
 
 
