@@ -20,7 +20,6 @@ public class TouchControl : MonoBehaviour
             tCount = Input.touchCount;
         if (tCount == 2)
         {
-            Debug.Log("Se para");
             panel.SetActive(true);
             Time.timeScale = 0;
         }
