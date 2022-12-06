@@ -31,20 +31,5 @@ public class MovePlayer : MonoBehaviour
         {
             rb.velocity = Vector2.zero;
         }
-
-
-        //this.transform.position = new Vector3(
-        //Mathf.Round(this.transform.position.x) + _direction.x,
-        //Mathf.Round(this.transform.position.y) + _direction.y,
-        //    0.0f);
-        //if (Time.time < nextUpdate)
-        //{
-        //    return;
-        //}
-        //float x = Mathf.Round(transform.position.x) + _direction.x;
-        //float y = Mathf.Round(transform.position.y) + _direction.y;
-
-        //transform.position = new Vector2(x, y);
-        //nextUpdate = Time.time + (1f / (playerSpeed * speedMultiplier));
     }
 }

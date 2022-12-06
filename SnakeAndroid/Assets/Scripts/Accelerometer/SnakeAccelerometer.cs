@@ -5,8 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class SnakeAccelerometer : MonoBehaviour
 {
-
-	// Reference to Rigidbody2D component of the ball game object
 	Rigidbody2D rb;
 
 	// Range option so moveSpeedModifier can be modified in Inspector
@@ -18,10 +16,6 @@ public class SnakeAccelerometer : MonoBehaviour
 	// as velocity to Rigidbody2d component
 	float dirX, dirY;
 
-
-
-
-
 	// Variable to allow or disallow movement when ball is alive or dead
 	static bool moveAllowed;
 
@@ -32,8 +26,6 @@ public class SnakeAccelerometer : MonoBehaviour
 
 		// Movement is allowed at the start
 		moveAllowed = true;
-
-
 
 		// Getting Rigidbody2D component of the ball game object
 		rb = GetComponent<Rigidbody2D>();
