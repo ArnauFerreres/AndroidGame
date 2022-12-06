@@ -10,6 +10,8 @@ public class Food : MonoBehaviour
 
     public TextMeshProUGUI scoreText;
     private int ScoreNum;
+
+    public GameObject sound;
     private void Start()
     {
         ScoreNum = 0;
@@ -32,6 +34,7 @@ public class Food : MonoBehaviour
         {
             ScoreNum += 10;
             scoreText.text = "Score " + ScoreNum;
+            Instantiate(sound, transform.position, transform.rotation);
             RandomizePosition(); 
         }
     }

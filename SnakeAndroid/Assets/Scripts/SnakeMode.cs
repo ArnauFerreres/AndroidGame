@@ -12,7 +12,7 @@ public class SnakeMode : MonoBehaviour
     {
         joystick.SetActive(true);
         this.GetComponent<MovePlayer>().enabled = true;
-        this.GetComponent<BallControlScript>().enabled = false;
+        this.GetComponent<SnakeAccelerometer>().enabled = false;
     }
 
     // Update is called once per frame
@@ -25,7 +25,7 @@ public class SnakeMode : MonoBehaviour
         panel.SetActive(false);
         joystick.SetActive(false);
         Time.timeScale = 1;
-        this.GetComponent<BallControlScript>().enabled = true;
+        this.GetComponent<SnakeAccelerometer>().enabled = true;
         this.GetComponent<MovePlayer>().enabled = false;
 
     }
@@ -35,7 +35,7 @@ public class SnakeMode : MonoBehaviour
         joystick.SetActive(true);
         Time.timeScale = 1;
         this.GetComponent<MovePlayer>().enabled = true;
-        this.GetComponent<BallControlScript>().enabled = false;
+        this.GetComponent<SnakeAccelerometer>().enabled = false;
     }
 
 

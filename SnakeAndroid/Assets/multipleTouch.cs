@@ -7,8 +7,6 @@ public class multipleTouch : MonoBehaviour
     public GameObject circle;
     public List<touchLocation> touches = new List<touchLocation>();
 
-
-    // Update is called once per frame
     void Update()
     {
         int i = 0;
